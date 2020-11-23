@@ -12,7 +12,7 @@ sudo mkdir -p /etc/preseed/new_image
 read -p "Do you want to download the last version of Ubuntu Bionic? (y/n) `echo $'\n> '`" answer
 if [ "$answer" == "y" ]; then
   echo "Downloading Ubuntu Image"
-  sudo wget $UBUNTU -P /etc/preseed/base_image
+  sudo wget -4 $UBUNTU -P /etc/preseed/base_image
 else
   echo "Executing docker container"
 fi
