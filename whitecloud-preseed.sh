@@ -17,4 +17,4 @@ else
   echo "Executing docker container"
 fi
 
-sudo docker run --rm -it --privileged --name generator-iso -v /etc/preseed:/etc/preseed $IMAGE_NAME:$TAG python3 /root/main.py
+sudo docker run --rm -it --privileged=true --name generator-iso -v /etc/preseed:/etc/preseed $IMAGE_NAME:$TAG python3 /root/main.py
