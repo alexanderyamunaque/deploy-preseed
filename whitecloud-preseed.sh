@@ -1,6 +1,6 @@
 #!/bin/bash
 export IMAGE_NAME=ayamunaque/preseed
-export TAG=2.0
+export TAG=2.2
 export UBUNTU="http://cdimage.ubuntu.com/ubuntu-server/bionic/daily/current/bionic-server-amd64.iso"
 
 echo "Downloading Docker Image:"
