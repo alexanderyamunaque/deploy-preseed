@@ -6,8 +6,7 @@ export UBUNTU="http://cdimage.ubuntu.com/ubuntu-server/bionic/daily/current/bion
 echo "Downloading Docker Image:"
 docker pull ${IMAGE_NAME}:${TAG}
 
-sudo mkdir -p /etc/preseed/base_image
-sudo mkdir -p /etc/preseed/new_image
+sudo mkdir -p /etc/preseed/{base_image,new_image}
 
 read -p "Do you want to download the last version of Ubuntu Bionic? (y/n) `echo $'\n> '`" answer
 if [ "$answer" == "y" ]; then
